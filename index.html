@@ -435,6 +435,399 @@
       color: var(--text-muted);
     }
 
+    /* Getting Started */
+    .getting-started {
+      padding: 100px 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .getting-started h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .getting-started .section-sub {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-bottom: 56px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .guide-block {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-bottom: 24px;
+    }
+
+    .guide-block h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .guide-block h3 .guide-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--accent);
+      color: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .guide-block h4 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 8px;
+      color: var(--accent-hover);
+    }
+
+    .guide-block p, .guide-block li {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .guide-block ul, .guide-block ol {
+      padding-left: 20px;
+      margin-top: 8px;
+    }
+
+    .guide-block li {
+      margin-bottom: 6px;
+    }
+
+    .guide-block code {
+      background: rgba(99, 102, 241, 0.1);
+      color: var(--accent-hover);
+      padding: 2px 7px;
+      border-radius: 5px;
+      font-size: 13px;
+      font-family: 'SF Mono', 'Fira Code', monospace;
+    }
+
+    .prereq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-top: 16px;
+    }
+
+    .prereq-card {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+    }
+
+    .prereq-card .prereq-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+
+    .prereq-card h4 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0 0 4px 0;
+    }
+
+    .prereq-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .prereq-card a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .prereq-card a:hover { text-decoration: underline; }
+
+    .install-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .install-tab {
+      padding: 8px 20px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+
+    .install-tab.active {
+      background: var(--accent);
+      color: #fff;
+      border-color: var(--accent);
+    }
+
+    .install-content {
+      display: none;
+    }
+
+    .install-content.active {
+      display: block;
+    }
+
+    .install-steps {
+      counter-reset: install-step;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .install-steps li {
+      counter-increment: install-step;
+      padding: 10px 0 10px 36px;
+      position: relative;
+      border-left: 2px solid var(--border);
+      margin-left: 12px;
+    }
+
+    .install-steps li:last-child {
+      border-left-color: transparent;
+    }
+
+    .install-steps li::before {
+      content: counter(install-step);
+      position: absolute;
+      left: -13px;
+      top: 8px;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: var(--surface-hover);
+      border: 2px solid var(--border);
+      color: var(--text-muted);
+      font-size: 11px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .tip-box {
+      background: rgba(52, 211, 153, 0.06);
+      border: 1px solid rgba(52, 211, 153, 0.15);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 16px;
+    }
+
+    .tip-box .tip-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--green);
+      margin-bottom: 4px;
+    }
+
+    .tip-box p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    .warn-box {
+      background: rgba(251, 191, 36, 0.06);
+      border: 1px solid rgba(251, 191, 36, 0.15);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-top: 16px;
+    }
+
+    .warn-box .warn-label {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #fbbf24;
+      margin-bottom: 4px;
+    }
+
+    .warn-box p {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+    }
+
+    /* Architecture */
+    .architecture {
+      padding: 100px 24px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .architecture h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    .architecture .section-sub {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 16px;
+      margin-bottom: 48px;
+      max-width: 520px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .arch-diagram {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-bottom: 32px;
+      overflow-x: auto;
+    }
+
+    .arch-diagram pre {
+      font-family: 'SF Mono', 'Fira Code', Consolas, monospace;
+      font-size: 12px;
+      line-height: 1.6;
+      color: var(--text-muted);
+      margin: 0;
+      white-space: pre;
+    }
+
+    .arch-diagram pre span.hl {
+      color: var(--accent-hover);
+    }
+
+    .arch-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .arch-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .arch-card h4 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .arch-card p {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* FAQ */
+    .faq {
+      padding: 100px 24px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .faq h2 {
+      text-align: center;
+      font-size: 32px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 48px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--border);
+      padding: 24px 0;
+    }
+
+    .faq-item:first-of-type {
+      border-top: 1px solid var(--border);
+    }
+
+    .faq-q {
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+      user-select: none;
+    }
+
+    .faq-q::after {
+      content: '+';
+      font-size: 20px;
+      font-weight: 400;
+      color: var(--text-muted);
+      flex-shrink: 0;
+      transition: transform 0.2s;
+    }
+
+    .faq-item.open .faq-q::after {
+      content: '\2212';
+    }
+
+    .faq-a {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease, padding 0.3s ease;
+    }
+
+    .faq-item.open .faq-a {
+      max-height: 500px;
+      padding-top: 12px;
+    }
+
+    .faq-a p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .faq-a a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .faq-a a:hover { text-decoration: underline; }
+
     /* Footer */
     footer {
       padding: 40px 24px;
@@ -455,6 +848,8 @@
       .cta-group { flex-direction: column; align-items: center; }
       .feature-grid { grid-template-columns: 1fr; }
       .download-cards { flex-direction: column; align-items: center; }
+      .prereq-grid { grid-template-columns: 1fr; }
+      .arch-cards { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -465,6 +860,8 @@
     <div style="display:flex;gap:24px;">
       <a href="#features">Features</a>
       <a href="#workflow">How It Works</a>
+      <a href="#getting-started">Get Started</a>
+      <a href="#faq">FAQ</a>
       <a href="#download">Download</a>
     </div>
   </nav>
@@ -604,6 +1001,274 @@
     </div>
   </section>
 
+  <!-- Getting Started -->
+  <section class="getting-started" id="getting-started">
+    <h2>Getting started</h2>
+    <p class="section-sub">Go from download to your first classified dataset in under 10 minutes.</p>
+
+    <!-- Prerequisites -->
+    <div class="guide-block">
+      <h3><span class="guide-num">0</span> Prerequisites</h3>
+      <p>Before you open the app, you'll need API keys for the services it calls. The app itself is free &mdash; you only pay for actual API usage.</p>
+      <div class="prereq-grid">
+        <div class="prereq-card">
+          <div class="prereq-label">Required</div>
+          <h4>OpenRouter API Key</h4>
+          <p>Routes requests to Claude, GPT, and other LLMs. Sign up at <a href="https://openrouter.ai" target="_blank" rel="noopener">openrouter.ai</a> and create an API key. Pay-as-you-go, typically a few cents per classification batch.</p>
+        </div>
+        <div class="prereq-card">
+          <div class="prereq-label">Optional</div>
+          <h4>Exa API Key</h4>
+          <p>Powers automatic web research on unknown suppliers. Sign up at <a href="https://exa.ai" target="_blank" rel="noopener">exa.ai</a>. Without this, classification still works but without supplier research context.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Install -->
+    <div class="guide-block">
+      <h3><span class="guide-num">1</span> Install the app</h3>
+
+      <div class="install-tabs">
+        <button class="install-tab active" onclick="switchInstall('mac')">macOS</button>
+        <button class="install-tab" onclick="switchInstall('win')">Windows</button>
+      </div>
+
+      <div id="install-mac" class="install-content active">
+        <ol class="install-steps">
+          <li>Download the <code>.dmg</code> file from the <a href="#download" style="color:var(--accent);">Download section</a></li>
+          <li>Double-click the DMG to mount it</li>
+          <li>Drag <strong>Colab91 Classifier</strong> into your <strong>Applications</strong> folder</li>
+          <li>On first launch, macOS may show a security warning &mdash; go to <strong>System Settings &rarr; Privacy &amp; Security</strong> and click <strong>"Open Anyway"</strong></li>
+          <li>The app opens to the project screen &mdash; you're ready to go</li>
+        </ol>
+      </div>
+
+      <div id="install-win" class="install-content">
+        <ol class="install-steps">
+          <li>Download the <code>.exe</code> installer from the <a href="#download" style="color:var(--accent);">Download section</a></li>
+          <li>Run the installer &mdash; Windows SmartScreen may prompt you; click <strong>"More info"</strong> then <strong>"Run anyway"</strong></li>
+          <li>Follow the installation wizard (default settings are fine)</li>
+          <li>Launch <strong>Colab91 Classifier</strong> from the Start Menu or desktop shortcut</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Configure API Keys -->
+    <div class="guide-block">
+      <h3><span class="guide-num">2</span> Configure your API keys</h3>
+      <ol class="install-steps">
+        <li>Click <strong>Settings</strong> (bottom-left corner of the sidebar)</li>
+        <li>Under <strong>LLM Configuration</strong>, select <code>OpenRouter</code> as the provider</li>
+        <li>Paste your OpenRouter API key &mdash; it's encrypted and stored locally via Electron's safeStorage</li>
+        <li>(Optional) Under <strong>Web Search</strong>, paste your Exa API key for supplier research</li>
+        <li>The default model is <code>claude-3-5-haiku-latest</code> &mdash; you can change it to any model available on OpenRouter</li>
+      </ol>
+      <div class="tip-box">
+        <div class="tip-label">Tip</div>
+        <p>Your API keys never leave your machine. They're encrypted at rest and sent directly to the API providers &mdash; no middleman server.</p>
+      </div>
+    </div>
+
+    <!-- Create First Project -->
+    <div class="guide-block">
+      <h3><span class="guide-num">3</span> Create your first project</h3>
+      <ol class="install-steps">
+        <li>Click <strong>New Project</strong> on the welcome screen</li>
+        <li>Choose a name and save location &mdash; this creates a <code>.c91</code> file (a self-contained DuckDB database)</li>
+        <li>Fill in <strong>Company Context</strong>: your company name, industry, and a brief description. This context helps the AI make smarter classification decisions</li>
+      </ol>
+    </div>
+
+    <!-- Import Data -->
+    <div class="guide-block">
+      <h3><span class="guide-num">4</span> Import your transaction data</h3>
+      <ol class="install-steps">
+        <li>Navigate to <strong>Data</strong> in the sidebar and click <strong>Import CSV</strong></li>
+        <li>Select your AP transactions CSV file</li>
+        <li>The app's <strong>Column Mapping Agent</strong> (an LLM) automatically maps your CSV columns to canonical fields: <code>supplier_name</code>, <code>spend_amount</code>, <code>gl_description</code>, <code>invoice_number</code>, etc.</li>
+        <li>Review the suggested mapping and correct any that look off, then confirm</li>
+        <li>The <strong>Data Review</strong> page shows all imported transactions &mdash; filter, sort, and inspect before moving on</li>
+      </ol>
+      <div class="tip-box">
+        <div class="tip-label">Tip</div>
+        <p>Column mappings are remembered per upload. The next time you import a CSV with the same format, the mapping is applied automatically.</p>
+      </div>
+    </div>
+
+    <!-- Set Up Taxonomy -->
+    <div class="guide-block">
+      <h3><span class="guide-num">5</span> Set up your taxonomy</h3>
+      <p>The taxonomy defines <em>how</em> transactions get classified. It's a 3-level hierarchy:</p>
+      <ul>
+        <li><strong>L1</strong> (Category) &mdash; e.g., "Corporate Services"</li>
+        <li><strong>L2</strong> (Sub-category) &mdash; e.g., "Information Technology"</li>
+        <li><strong>L3</strong> (Detail) &mdash; e.g., "Software Licenses"</li>
+      </ul>
+      <p style="margin-top:12px">Paths are displayed as pipe-delimited strings: <code>Corporate Services|IT|Software</code></p>
+
+      <h4>Option A: Import from ColabIP</h4>
+      <p>If you have a master taxonomy file (CSV/Excel), import it from the <strong>Taxonomy</strong> page. The app parses the L1/L2/L3 columns automatically.</p>
+
+      <h4>Option B: Build from scratch</h4>
+      <p>Use the Taxonomy editor to add categories manually. You can always edit, add, or remove entries later.</p>
+    </div>
+
+    <!-- Run Classification -->
+    <div class="guide-block">
+      <h3><span class="guide-num">6</span> Run classification</h3>
+      <ol class="install-steps">
+        <li>Navigate to the <strong>Classification</strong> page</li>
+        <li>Select which transactions to classify (all, unclassified only, or a filtered subset)</li>
+        <li>Click <strong>Start Classification</strong> &mdash; the progress bar shows real-time status</li>
+      </ol>
+      <p style="margin-top:16px;">Behind the scenes, the app runs a multi-step pipeline:</p>
+      <ul>
+        <li><strong>Supplier Research</strong> &mdash; unknown suppliers are researched on the web via Exa to understand what they sell or do</li>
+        <li><strong>Override Rules</strong> &mdash; if you've configured rules (e.g., "all transactions from Microsoft go to IT|Software"), matching transactions are classified instantly without using LLM credits</li>
+        <li><strong>LLM Classification</strong> &mdash; remaining transactions are sent in batches to the LLM with your taxonomy, company context, and any supplier research results as context</li>
+        <li><strong>QC Agent</strong> &mdash; a separate AI agent reviews the classifications and flags low-confidence or inconsistent results</li>
+      </ul>
+      <div class="warn-box">
+        <div class="warn-label">Note</div>
+        <p>Classification uses your OpenRouter credits. Cost depends on the model and number of transactions. Claude 3.5 Haiku is the default &mdash; fast and cost-effective. A batch of 1,000 transactions typically costs under $1.</p>
+      </div>
+    </div>
+
+    <!-- Review -->
+    <div class="guide-block">
+      <h3><span class="guide-num">7</span> Review and correct</h3>
+      <ol class="install-steps">
+        <li>Go to the <strong>Review</strong> page to see all classified transactions</li>
+        <li>QC-flagged items are highlighted &mdash; review these first</li>
+        <li>Click any transaction to see the AI's reasoning and confidence score</li>
+        <li>Correct misclassifications by selecting the right L1/L2/L3 from the taxonomy dropdown</li>
+        <li>Your corrections feed back into the system &mdash; the <strong>Feedback Agent</strong> learns from corrections to improve future runs</li>
+      </ol>
+    </div>
+
+    <!-- Export -->
+    <div class="guide-block">
+      <h3><span class="guide-num">8</span> Export results</h3>
+      <ol class="install-steps">
+        <li>Navigate to <strong>Output</strong> in the sidebar</li>
+        <li>Choose your export format (CSV)</li>
+        <li>Select which columns to include in the export</li>
+        <li>Click <strong>Export</strong> and choose a save location</li>
+      </ol>
+      <div class="tip-box">
+        <div class="tip-label">Tip</div>
+        <p>Your project <code>.c91</code> file retains all data, classifications, and history. You can re-open it anytime, import new batches, re-run classification, or share the file with a colleague.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Architecture -->
+  <section class="architecture" id="architecture">
+    <h2>Under the hood</h2>
+    <p class="section-sub">A look at the technical architecture for the curious.</p>
+
+    <div class="arch-diagram">
+      <pre>
+<span class="hl">Renderer</span> (React + Zustand)  &lt;-- IPC --&gt;  <span class="hl">Main Process</span> (Node.js)
+                                             ├── DI Container (createContainer)
+                                             ├── IPC Handlers
+                                             ├── <span class="hl">Orchestrators</span>
+                                             │   ├── ClassificationRunner
+                                             │   ├── SupplierResearcher
+                                             │   └── QCRunner
+                                             ├── <span class="hl">6 LLM Agents</span>
+                                             │   ├── ClassificationAgent
+                                             │   ├── ResearchAgent
+                                             │   ├── ColumnMappingAgent
+                                             │   ├── FeedbackAgent
+                                             │   ├── QCAgent
+                                             │   └── CatAAgent
+                                             ├── Data Services (stores, ingest, export)
+                                             └── Leaf Layer
+                                                 ├── DuckDB
+                                                 ├── LLMClient &rarr; OpenRouter
+                                                 └── ExaWebSearch &rarr; Exa API</pre>
+    </div>
+
+    <div class="arch-cards">
+      <div class="arch-card">
+        <h4>Electron + React</h4>
+        <p>Main process handles all backend logic, DB access, and LLM calls. Renderer is a React SPA with Zustand state management, connected via typed IPC channels.</p>
+      </div>
+      <div class="arch-card">
+        <h4>DuckDB Storage</h4>
+        <p>Each project is a single <code>.c91</code> DuckDB file &mdash; embedded, zero-config, portable. Dynamic schema: canonical columns are added at runtime as CSVs are imported.</p>
+      </div>
+      <div class="arch-card">
+        <h4>Dependency Injection</h4>
+        <p>All services receive dependencies via constructor &mdash; no module-level singletons. A lightweight DI container wires everything in dependency order: Leaf &rarr; Agents &rarr; Services &rarr; Orchestrators.</p>
+      </div>
+      <div class="arch-card">
+        <h4>6 Specialized Agents</h4>
+        <p>Each agent has a focused job: classify transactions, research suppliers, map columns, incorporate feedback, run QC, and handle category analysis. Pure prompt builders + parsers make them testable.</p>
+      </div>
+      <div class="arch-card">
+        <h4>EventBus</h4>
+        <p>A typed event emitter handles async progress (classification %, supplier research status). Services emit events; the entry point forwards them to the renderer via <code>webContents.send</code>.</p>
+      </div>
+      <div class="arch-card">
+        <h4>Supplier Universe</h4>
+        <p>A shared DuckDB file stores global supplier data, aliases, and research info across projects. FK-based model: transactions reference suppliers via foreign key, not string matching.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <h2>Frequently asked questions</h2>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is the app free?</div>
+      <div class="faq-a"><p>Yes, the app itself is completely free. You only pay for LLM API usage through OpenRouter (pay-as-you-go). A typical batch of 1,000 transactions classified with Claude 3.5 Haiku costs under $1.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What format does my CSV need to be in?</div>
+      <div class="faq-a"><p>Any CSV with transaction data works. The app uses an AI-powered column mapping agent that automatically detects and maps your columns to canonical fields (supplier name, amount, GL description, etc.). You review and confirm the mapping before import.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Which LLM models are supported?</div>
+      <div class="faq-a"><p>Any model available on <a href="https://openrouter.ai/models" target="_blank" rel="noopener">OpenRouter</a> works &mdash; including Claude (3.5 Haiku, Sonnet, Opus), GPT-4o, Gemini, Llama, Mistral, and more. The default is Claude 3.5 Haiku for the best balance of speed, accuracy, and cost. You can change the model in Settings.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Is my data sent to the cloud?</div>
+      <div class="faq-a"><p>Transaction data is sent to the LLM provider (via OpenRouter) only during classification &mdash; this is necessary for the AI to classify your transactions. All data is stored locally on your machine in DuckDB files. API keys are encrypted via Electron safeStorage. No data is sent to any other service.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Can I share a project with a colleague?</div>
+      <div class="faq-a"><p>Yes! Each project is a single <code>.c91</code> file. Send it to a colleague and they can open it directly in the app. All transactions, classifications, taxonomy, and settings are contained in that one file.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What are override rules?</div>
+      <div class="faq-a"><p>Override rules let you auto-classify transactions that match specific conditions (e.g., supplier name contains "Microsoft" &rarr; IT|Software) without using LLM credits. Rules are evaluated by priority before the AI runs, so known patterns are handled instantly and for free.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">Does the app work offline?</div>
+      <div class="faq-a"><p>You can open projects, browse data, and export results offline. Classification requires an internet connection since it calls the LLM and web search APIs. Override rules work offline since they're evaluated locally.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">How accurate is the classification?</div>
+      <div class="faq-a"><p>Accuracy depends on your taxonomy complexity, company context quality, and the model you choose. With good context and a well-structured taxonomy, users typically see 85-95% accuracy on the first pass. The QC agent flags uncertain results, and your corrections improve future runs via the feedback agent.</p></div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggleFaq(this)">What's the Supplier Universe?</div>
+      <div class="faq-a"><p>The Supplier Universe is a shared database that stores supplier information, aliases, and web research results across all your projects. When the app researches a supplier for one project, that knowledge is available to all future projects &mdash; no duplicate research needed.</p></div>
+    </div>
+  </section>
+
   <section class="download" id="download">
     <h2>Download Colab91</h2>
     <p>Free to use. Bring your own OpenRouter API key.</p>
@@ -627,6 +1292,28 @@
   <footer>
     Built by <a href="https://github.com/kavyald" target="_blank" rel="noopener">kavyald</a> &amp; <a href="https://github.com/prince1823" target="_blank" rel="noopener">prince1823</a>
   </footer>
+
+  <script>
+    function switchInstall(platform) {
+      document.querySelectorAll('.install-tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.install-content').forEach(c => c.classList.remove('active'));
+      document.getElementById('install-' + platform).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    function toggleFaq(el) {
+      el.parentElement.classList.toggle('open');
+    }
+
+    // Smooth scroll for nav links
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+  </script>
 
 </body>
 </html>
