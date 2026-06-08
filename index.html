@@ -951,7 +951,7 @@
         </div>
         <div class="step-content">
           <h3>Import your data</h3>
-          <p>Upload a CSV of AP transactions. The app auto-maps your columns to canonical fields like supplier name, amount, and GL description.</p>
+          <p>Upload a CSV of AP transactions via the <strong>Data</strong> tab. The app auto-maps your columns to canonical fields like supplier name, amount, and GL description.</p>
         </div>
       </div>
       <div class="step">
@@ -961,7 +961,7 @@
         </div>
         <div class="step-content">
           <h3>Configure taxonomy &amp; context</h3>
-          <p>Import or define your classification taxonomy and set up company context so the AI understands your business.</p>
+          <p>Import or define your classification hierarchy in the <strong>Taxonomy</strong> tab and set up company context in the <strong>Project</strong> tab so the AI understands your business.</p>
         </div>
       </div>
       <div class="step">
@@ -981,7 +981,7 @@
         </div>
         <div class="step-content">
           <h3>Review &amp; export</h3>
-          <p>Review flagged transactions, correct any misclassifications, then export the final results to CSV.</p>
+          <p>Review flagged transactions in the <strong>Review</strong> tab, correct any misclassifications, then export the final results to CSV from <strong>Sync &amp; Export</strong>.</p>
         </div>
       </div>
     </div>
@@ -1075,7 +1075,7 @@
       <ol class="install-steps">
         <li>Click <strong>New Project</strong> on the welcome screen</li>
         <li>Choose a name and save location &mdash; this creates a <code>.c91</code> file (a self-contained DuckDB database)</li>
-        <li>Fill in <strong>Company Context</strong>: your company name, industry, and a brief description. This context helps the AI make smarter classification decisions</li>
+        <li>Fill in the <strong>Project</strong> page: your company name, industry, and a brief description. This context helps the AI make smarter classification decisions</li>
       </ol>
     </div>
 
@@ -1083,11 +1083,11 @@
     <div class="guide-block">
       <h3><span class="guide-num">4</span> Import your transaction data</h3>
       <ol class="install-steps">
-        <li>Navigate to <strong>Data</strong> in the sidebar and click <strong>Import CSV</strong></li>
+        <li>Navigate to the <strong>Data</strong> tab in the sidebar and click <strong>Import CSV</strong></li>
         <li>Select your AP transactions CSV file</li>
         <li>The app's <strong>Column Mapping Agent</strong> (an LLM) automatically maps your CSV columns to canonical fields: <code>supplier_name</code>, <code>spend_amount</code>, <code>gl_description</code>, <code>invoice_number</code>, etc.</li>
         <li>Review the suggested mapping and correct any that look off, then confirm</li>
-        <li>The <strong>Data Review</strong> page shows all imported transactions &mdash; filter, sort, and inspect before moving on</li>
+        <li>The <strong>Data</strong> page shows all imported transactions &mdash; filter, sort, and inspect before moving on</li>
       </ol>
       <div class="tip-box">
         <div class="tip-label">Tip</div>
@@ -1150,7 +1150,7 @@
     <div class="guide-block">
       <h3><span class="guide-num">8</span> Export results</h3>
       <ol class="install-steps">
-        <li>Navigate to <strong>Output</strong> in the sidebar</li>
+        <li>Navigate to the <strong>Sync &amp; Export</strong> tab in the sidebar</li>
         <li>Choose your export format (CSV)</li>
         <li>Select which columns to include in the export</li>
         <li>Click <strong>Export</strong> and choose a save location</li>
